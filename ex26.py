@@ -52,7 +52,7 @@ print "--------------"
 print poem
 print "--------------"
 
-five = 10 - 2 + 3 - 5
+five = 10 - 2 + 3 - 6
 print "This should be five: %s" % five
 
 def secret_formula(started):
@@ -66,12 +66,12 @@ start_point = 10000
 beans, jars, crates = secret_formula(start_point)
 
 print "With a starting point of: %d" % start_point
-print "We'd have %d jeans, %d jars, and %d crates." % (beans, jars, crates)
+print "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
 
 start_point = start_point / 10
 
 print "We can also do that this way:"
-print "We'd have %d beans, %d jars, and %d crabapples." % secret_formula(start_point)
+print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
 
 
 sentence = "All good things come to those who wait."
@@ -83,8 +83,8 @@ print_first_word(words)
 print_last_word(words)
 print_first_word(sorted_words)
 print_last_word(sorted_words)
-sorted_words = ex25.sort_sentence(sentence)
-prin sorted_words
+sorted_words = sort_sentence(sentence)
+print sorted_words
 
 print_first_and_last(sentence)
 
